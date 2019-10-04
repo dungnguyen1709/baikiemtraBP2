@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    var diemtoan;
+    var diemvan;
+    var diemanh;
+    do {
+    diemtoan = parseFloat(prompt("nhap diem toan :"));
+    } while (diemtoan < 0 || diemtoan > 10);
+    do {
+        diemvan = parseFloat(prompt("nhap diem van :"));
+    } while (diemvan < 0 || diemvan > 10);
+    do {
+        diemanh = parseFloat(prompt("nhap diem anh :"))
+    } while (diemanh <0 || diemanh >10);
+    var tb = (diemtoan*2 + diemvan + diemanh*2)/5;
+    if (tb < 5) alert("khong dat");
+    else if (tb >=5 && tb < 7.5) alert("dat");
+    else if (tb >=7.6 && tb < 8.5) alert("kha");
+    else alert("tot");
+</script>
+</body>
+</html>
